@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>I-Remember Live Ride Map</title>
+        <link rel="stylesheet" href="https://npmcdn.com/leaflet@1.0.0-rc.3/dist/leaflet.css" />
+        <link rel="stylesheet" href="/style/style.css" />
+    </head>
+    <body>
+        <div id="mapid"></div>
+
+        <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+        <script src="https://npmcdn.com/leaflet@1.0.0-rc.3/dist/leaflet.js"></script>
+        <script src="/vendor/moment.min.js"></script>
+        <script src="/js/movesmap.js"></script>
+
+        <script>
+            movesmap.init({
+                'MOVES_API_PROXY': 'http://iremember.movesmapper.steveq.edge80.net',
+                'DAYS': 1,
+                'MAPBOX_ID': 'steveq.14h2aib9',
+                'MAPBOX_ACCESS_TOKEN': 'pk.eyJ1Ijoic3RldmVxIiwiYSI6ImNpcnZ5MmtvMjBpbXdmZm04cjUxYWpobnEifQ.rdELDnnCyDja6nNdg5WwRA',
+                'DEFAULT_ZOOM': 13,
+                'WHEREAMI_ICON': '/img/bike.png'
+            });
+        </script>
+    </body>
+</html>
